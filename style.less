@@ -1,0 +1,115 @@
+@button-bg-color: #7f8ff4;
+@button-text-color: #fff;
+@ff: 'Titan One', cursive;
+@admin_font: 'Raleway', sans-serif;
+@usr_font: 'Montserrat', sans-serif;
+
+.container {
+    display: flex;
+    align-items: center;
+	justify-content: center;
+}
+.inside {
+            text-align: center;
+            margin: auto;
+}
+.welcome {
+  font-family: @ff;
+  font-size: 100px;
+}
+
+.identifier {
+    font-family: @ff;
+    font-size: 42px;
+}
+
+.form {
+    &__field {
+		width: 360px;
+		background: #fff;
+		color: #a3a3a3;
+		font: inherit;
+		box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+		border: 0;
+		outline: 0;
+		padding: 22px 18px;
+	}
+}
+
+.btn {
+	display: inline-block;
+	background: transparent;
+	color: inherit;
+	font-family: @ff;
+    font-size: 14px;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	transition: all 200ms ease-in;
+	cursor: pointer;
+	
+	&--primary {
+		background: @button-bg-color;
+		color: @button-text-color;
+		box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+		border-radius: 2px;
+		padding: 12px 36px;
+		
+		&:hover {
+			background: darken(@button-bg-color, 4%);
+		}
+		
+		&:active {
+			background: @button-bg-color;
+			box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+		}
+	}
+	
+	&--inside {
+		margin-left: -96px;
+	}
+}
+
+#admin {
+    display: none;
+}
+
+.admin {
+    font-family: @admin_font;
+    font-size: 40px;
+    color: forestgreen;
+}
+
+#usr {
+    display: none;
+}
+
+.usr {
+    font-family: @usr_font;
+    font-size: 30px;
+    color: #D3D3D3;  
+}
+
+#adm_content {
+    font-family: @usr_font;
+}
+
+#usr_content {
+    font-family: @usr_font;
+}
+
+#r1{display: none; }
+#r2{display: none; }
+#r3{display: none; }
+#r4{display: none; }
+#r5{display: none; }
+#w1{display: none; }
+#w2{display: none; }
+#w3{display: none; }
+#w4{display: none; }
+#w5{display: none; }
+#m1{display: none; }
+#m2{display: none; }
+#m3{display: none; }
+#m4{display: none; }
+#m5{display: none; }
